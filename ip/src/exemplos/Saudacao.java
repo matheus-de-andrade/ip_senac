@@ -11,7 +11,7 @@ public class Saudacao {
 		String nome = teclado.nextLine();
 		
 		System.out.println("Olá " + nome + ",seja bem vindo!!");
-
+		teclado.close();
 	}
 
 }
