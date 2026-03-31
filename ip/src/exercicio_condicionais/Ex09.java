@@ -14,7 +14,7 @@ public class Ex09 {
 		System.out.print("Quantos quilos de maças foram comprados?");
 		double quiloMaca = teclado.nextDouble();
 		double valorMaca = 1.80;
-		String desconto = "n";
+		String desconto = "nao";
 		if (quiloMorango > 5) {
 			valorMorango = 2.20;
 		}
@@ -24,11 +24,11 @@ public class Ex09 {
 		double valorTotal  = (quiloMorango * valorMorango) + (quiloMaca * valorMaca);
 		if (valorTotal > 25 || (quiloMorango + quiloMaca) > 8) {
 			valorTotal = valorTotal * 0.90;
-			desconto = "s";
+			desconto = "sim";
 		}
 		System.out.print("\n--Nota fiscal--\n" + quiloMorango + "KG de morango -> R$" + formata.format(quiloMorango * valorMorango) + "\n" + quiloMaca + "KG de maça -> R$" + formata.format(quiloMaca * valorMaca)
 				+ "\n");
-		if (desconto == "s") {
+		if (desconto == "sim") {
 			System.out.print("Valor de desconto: 10%\n");
 		}
 		else {
@@ -37,5 +37,4 @@ public class Ex09 {
 		System.out.print("\nSubTotal: R$" + formata.format(valorTotal));
 		teclado.close();
 	}
-
 }

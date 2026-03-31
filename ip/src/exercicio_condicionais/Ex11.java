@@ -32,5 +32,4 @@ public class Ex11 {
 		System.out.print("--Média de aproveitamento--\nNota 1: " + nota1 + "\nNota 2: " + nota2 + "\nNota 3: " + nota3 + "\n\nMédia: " + formata.format(mediaAproveitamento) + "\nConceito Final: " + conceito);
 		teclado.close();
 	}
-
 }
