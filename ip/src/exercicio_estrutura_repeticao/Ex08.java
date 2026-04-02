@@ -1,38 +1,38 @@
 package exercicio_estrutura_repeticao;
 
 import java.util.Scanner;
+import java.text.DecimalFormat;
 
 public class Ex08 {
 
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
-		String opcao = teclado.nextLine();
+		DecimalFormat formata = new DecimalFormat("0.00");
 		System.out.print("Gostaria de adicionar um produto ao estoque?\n\nS -> Sim\nN ->Não");
-		opcao = teclado.nextLine();
+		String opcao = teclado.nextLine();
 		int i = 0;
 		double valorMercadoria = 0;
-		if (opcao == "S" || opcao == "s") {
-		do {
-			switch (opcao) {
-			case "S": case "s": {
+		switch(opcao) {
+		case "s": case"S": {
+			do {
 				i++;
-				System.out.print("Digite o valor da " + i + "° mercadoria: ");
+				System.out.print("Qual o valor desse produto?");
 				valorMercadoria = teclado.nextDouble() + valorMercadoria;
-				break;
-			}
-			case "N": case "n": {
-				System.out.print("-- Informações --\n\nQuantidade de mercadoria: " + i);
-				System.out.print("\nValor total em estoque: R$" + valorMercadoria);
-				System.out.print("Média de valor em estoque: R$" + valorMercadoria / i);
-				break;
+				teclado.nextLine();
+				System.out.print("Gostaria de adicionar mais algum produto?");
+				opcao = teclado.nextLine();
+			}while(opcao.equals("S") || opcao.equals("s"));
+			System.out.print("\n-- Informações --\n\nItens em estoque: " + i + "\nValor em estoque: R$" + valorMercadoria);
+			System.out.print("\nValor médio em estoque: R$" + formata.format(valorMercadoria/i));
+			break;
 		}
-		}} while (opcao == "s" || opcao == "S");
+		case "n": case "N": {
+			System.out.print("Você não tem produtos suficiente para calcular o valor médio de estoque ):");
+			break;
 		}
-		else if(opcao == "n" || opcao =="N" ) {
-			System.out.print("Seu estoque não possui mercadoria para obter informações ):");
+		default: {
+			System.out.print("XXXXXXXXX Opção inválida XXXXXXXXX");
 		}
-		else {
-			System.out.print("Opção inválida, encerrando contagem");
 		}
 		teclado.close();
 	}
