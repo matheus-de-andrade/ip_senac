@@ -1,4 +1,4 @@
-package Exercicio_array_matriz;
+package exercicio_array_matriz;
 
 public class Exemplo2 {
 
