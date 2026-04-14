@@ -25,7 +25,7 @@ public class Exemplo4 {
 			lin = teclado.nextInt();
 			System.out.print("Digite a coluna que deseja jogar: ");
 			colum = teclado.nextInt();
-			//Aqui vai o código verfica se a posição jogada já não possui outra preenchida anteriormente, caso esteja, ele vai invalidar a jogada e pedir novamente
+			//Aqui o código vai verficar se a posição jogada já não possui outra preenchida anteriormente, caso esteja, ele vai invalidar a jogada e pedir novamente
 			if(jogo[lin][colum] == 'X') {
 				System.out.print("Opção inválida, tente de novo ");
 			}
