@@ -29,9 +29,9 @@ public class Ex04 {
 			else {
 				System.out.print("Opção inválida, tente de novo");
 			}
-			System.out.print("\nO número maior é: " + numMaior + " aparencendo no indice " + indMaior);
-			System.out.print("\nO número menor é: " + numMenor + " aparencendo no indice " + indMenor);
 		}
+		System.out.print("\nO número maior é: " + numMaior + " aparencendo no indice " + indMaior);
+		System.out.print("\nO número menor é: " + numMenor + " aparencendo no indice " + indMenor);
 		teclado.close();
 	}
 
