@@ -19,5 +19,4 @@ public class Ex10 {
 		}
 		teclado.close();
 	}
-
 }

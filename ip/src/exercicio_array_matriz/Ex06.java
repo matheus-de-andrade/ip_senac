@@ -12,7 +12,7 @@ public class Ex06 {
 		double somaTemp = 0;
 		double maiorNum = 0;
 		double menorNum = 100000;
-		for(int i = 0; i < 10; i++) {
+		for(int i = 0; i < 12; i++) {
 			System.out.print("\nDigite a média de temperatura do mês " + (i + 1) + "/2025 :");
 			tempMeses[i] = teclado.nextDouble();
 			somaTemp += tempMeses[i];
