@@ -1,2 +1,12 @@
 /module-info.class
+/.classpath
+/.gitignore
+/.project
+/exemplos/
+/exercicio_array_matriz/
+/exercicio_array_matriz_extra/
+/exercicio_condicionais/
+/exercicio_condicionais_extra/
+/exercicio_estrutura_repeticao/
+/exercicio_estrutura_repeticao_extra/
 /procedimentos_funcoes/
