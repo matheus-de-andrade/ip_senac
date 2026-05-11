@@ -28,18 +28,21 @@ public class Ex08 {
 		double lado2 = numsTri[1];
 		double lado3 = numsTri[2];
 		int validacao = 0;
-		if(lado1 < (lado2 + lado3) || lado2 < (lado1 + lado3) || lado3 < (lado1 + lado2)) {
+		if(lado1 < (lado2 + lado3) && lado2 < (lado1 + lado3) && lado3 < (lado1 + lado2)) {
 			validacao = 1;
 		}	
 		return validacao;
 	}
 	
 	static void tipoTriangulo(double[] numsTri) {
-		if((numsTri[1] == numsTri[0]) || (numsTri[0] == numsTri[2]) || (numsTri[1] == numsTri[2])) {
-			System.out.print("Tipo d triangulo: isóceles");
-		}
 		if(numsTri[0] == numsTri[1] && numsTri[1] == numsTri[2]) {
 			System.out.print("Tipo d triangulo: Equilátero");
+		}
+		else if((numsTri[1] == numsTri[0]) || (numsTri[0] == numsTri[2]) || (numsTri[1] == numsTri[2])) {
+			System.out.print("Tipo d triangulo: isóceles");
+		}
+		else {
+			System.out.print("É um triangulo de algum modelo aí (rsrsrsr)");
 		}
 	}
 
