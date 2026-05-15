@@ -36,13 +36,13 @@ public class Ex08 {
 	
 	static void tipoTriangulo(double[] numsTri) {
 		if(numsTri[0] == numsTri[1] && numsTri[1] == numsTri[2]) {
-			System.out.print("Tipo d triangulo: Equilátero");
+			System.out.print("Tipo de triangulo: Equilátero");
 		}
 		else if((numsTri[1] == numsTri[0]) || (numsTri[0] == numsTri[2]) || (numsTri[1] == numsTri[2])) {
-			System.out.print("Tipo d triangulo: isóceles");
+			System.out.print("Tipo de triangulo: isóceles");
 		}
 		else {
-			System.out.print("É um triangulo de algum modelo aí (rsrsrsr)");
+			System.out.print("Tipo de triangulo: escaleno");
 		}
 	}
 

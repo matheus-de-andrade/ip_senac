@@ -8,8 +8,8 @@ public class Ex07 {
 		Scanner teclado = new Scanner(System.in);
 		System.out.print("Informe um número: ");
 		int num = teclado.nextInt();
-		int verificacao = calcularPrimo(num);
-		if(verificacao == 1) {
+		boolean verificacao = calcularPrimo(num);
+		if(verificacao == true) {
 			System.out.print("\nO número " +  num + " é primo");
 		}
 		else {
@@ -18,8 +18,8 @@ public class Ex07 {
 
 	}
 	
-	static int calcularPrimo(int num) {
-		int validacao = 0;
+	static boolean calcularPrimo(int num) {
+		boolean validacao = false;
 		int validador = 0;
 		if(num > 10) {
 			for(int i =1; i <= 10; i++) {
@@ -28,7 +28,7 @@ public class Ex07 {
 				}
 			}
 			if(validador <= 1) {
-				validacao = 1;
+				validacao = true;
 			}
 		}
 		if(num <= 10) {
@@ -38,7 +38,7 @@ public class Ex07 {
 				}
 			}
 			if(validador == 2) {
-				validacao = 1;
+				validacao = true;
 			}
 		}
 		return validacao;
