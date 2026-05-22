@@ -9,12 +9,13 @@ public class Ex04 {
 		System.out.print("Escreva uma frase: ");
 		String frase = tc.nextLine();
 		frase = frase.replace("." , " ");
+		frase = frase.replace("," , " ");
 		System.out.print("Informe a palavra para procurar: ");
 		String palavraChave = tc.nextLine();
 		String[] palavras = frase.split(" ");
 		int contador = 0;
 		for(int i = 0; i < palavras.length; i++) {
-			if(palavras[i].equals(palavraChave)) {
+			if(palavras[i].equalsIgnoreCase(palavraChave)) {
 				contador++;
 			}
 		}

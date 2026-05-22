@@ -10,7 +10,7 @@ public class Ex12 {
 		String nomeCompleto = tc.nextLine();
 		String[] nomeSep = nomeCompleto.split(" ");
 		nomeSep[nomeSep.length - 1] =nomeSep[nomeSep.length - 1].toUpperCase();
-		System.out.print(nomeSep[nomeSep.length - 1] + ".");
+		System.out.print(nomeSep[nomeSep.length - 1] + ",");
 		for(int i = 0; i <= nomeSep.length - 2; i++) {
 			System.out.print(" " + nomeSep[i]);
 		}
