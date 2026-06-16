@@ -58,6 +58,14 @@ public class Exemplo4 {
 						ganhador = 1;
 					}
 				}
+				if(jogo[0][0] == 'X' && jogo[1][1] == 'X' && jogo[2][2] == 'X') {
+					ganhador = 1;
+					System.out.print("\nO ganhador é o jogador 1 (X)");
+				}
+				if(jogo[0][2] == 'X' && jogo[1][1] == 'X' && jogo[2][0] == 'X') {
+					System.out.print("\nO ganhador é o jogador 1 (X)");
+					ganhador = 1;
+				}
 				jogador = 2;
 			break;
 			}
@@ -83,15 +91,14 @@ public class Exemplo4 {
 						System.out.print("\nO ganhador é o jogador 2 (O)");
 						ganhador = 2;
 					}
-					if(jogo[j][j] == 'O' && jogo[j+1][j+1] == 'O' && jogo[j+2][j+2] == 'O') {
-						for(int i = 0; i < 3; i++) {
-							System.out.print("\n");
-							for(int jx = 0; jx < 3; jx++) {
-								System.out.print("[" + jogo[i][jx] + "]");
-								}}
-						System.out.print("\nO ganhador é o jogador 2 (O)");
-						ganhador = 2;
-					}
+				}
+				if(jogo[0][0] == 'O' && jogo[1][1] == 'O' && jogo[2][2] == 'O') {
+					System.out.print("\nO ganhador é o jogador 2 (O)");
+					ganhador = 2;
+				}
+				if(jogo[0][2] == 'O' && jogo[1][1] == 'O' && jogo[2][0] == 'O') {
+					System.out.print("\nO ganhador é o jogador 2 (O)");
+					ganhador = 2;
 				}
 				jogador = 1;
 			break;
